@@ -1,32 +1,14 @@
-async function injectContent() {
-    let url = location.href;
-    file = url.split('=');
-    const resp = await fetch(`views/${file[1]}.html`);
-    const html = await resp.text();
-    let inject = document.getElementById('content');
-    // document.inject.insertAdjacentHTML("content", html);
-    inject.innerHTML =html;
-}
+//ROLAR ATÉ ÀS SEÇÕES CLICADAS NO MENU
+const navLinks = document.querySelectorAll("nav a");
 
-
-injectContent();
-
-
-function activelink(){
-    let url = location.href;
-    let view = url.split('=');
-    let sessao = (view[1] != undefined) ? view[1] : 'inicio'; 
-    document.getElementById(sessao).className += ' active ';
-
-
-}
-
-activeLink();
-
-let elem = document.getElementById('teste');
-
-console.log(elem);
-
-elem.addEventListener("click", function() {
-    alert ('cliquei no link')
-})
+navLinks.forEach(link => {
+  link.addEventListener("click", function(event) {
+    event.preventDefault();
+    const targetId = this.getAttribute("href");
+    const targetPosition = document.querySelector(targetId).offsetTop;
+    window.scrollTo({
+      top: targetPosition,
+      behavior: "smooth"
+    });
+  });
+});

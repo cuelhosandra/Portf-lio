@@ -4,57 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="icofont/icofont.min.css">
     <link rel="stylesheet" href="css/main.css">
        
-    <title>Grão de Café</title>
+    <title>Sandra Coelho</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-light configNavbar">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="img/avatar.png" width="88px"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- <span class="navbar-toggler-icon"></span> -->
+
+    <!--NAV BAR-->
+
+    <nav class="navbar navbar-expand-lg configNavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/assinatura.png" width="190px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">     
             <i class="icofont-navigation-menu"></i>
-        </button>
-
+            </button>
         
-        <div class="collapse navbar-collapse" id="navbarNav">
-           
-          <ul class="navbar-nav">
-            
-              <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./boots.html">Início</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="./sobre.html">Sobre mim</a>
-              </li>           
-              <li class="nav-item">
-                  <a class="nav-link" href="./contato.html">Contato</a>
-              </li>
-          </ul>
-      </div>
- 
-</div>
-</nav>
+        <div class="collapse navbar-collapse" id="navbarNav">           
+            <ul class="navbar-nav">     
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#secao0">Início</a>
+                </li>       
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#secao1">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#secao2">Sobre mim</a>
+                </li>           
+                <li class="nav-item">
+                    <a class="nav-link active" href="#secao3">Contato</a>
+                </li>           
+                </ul>
+        </div> 
+    </div>
+    </nav>
 
-<main>
+    <!--BOTÃO VOLTAR AO TOPO-->
+    <abbr title="VOLTE AO TOPO"><a id="link-topo" href="#" alt="Volte ao topo!">△</a></abbr>
+
+<main id="secao0">
     <H2 class="hello">OLÁ,</H2>
     <H2 class="world">MUNDO!</H2>
     <div class="lado">
     <img class="tchau" src="img/tchau.png" width="30px">
-    <h4 class="bem-vindo">Vem conhecer um pouco mais sobre mim e meus projetos!</h4>  
-    </div>      
-
+    <h4 class="bem-vindo">Vem conhecer um pouco mais sobre mim!</h4>  
+    </div>   
 </main> 
+
 <br><br>
+
 <div class="linha-divisoria"></div>
 
-<h2 class="aquiEstao">AQUI ESTÃO ALGUNS PROJETOS BÁSICOS E AVANÇADOS QUE FIZ DURANTE MINHA JORNADA <strong>DEV</strong></h2>
 <!--CARDS COM ALGUNS PROJETOS-->
+<h2 class="aquiEstao" id="secao1">Meus Projetos</h2>
 <main class="cards">
+    <div class="espaco">
     <section class="card contact">
         <div class="icon">
             <img src="img/cafe5.jpg">
@@ -79,21 +85,55 @@
         <span>Utilizado: HTML, CSS, JS, JAVA, ANGULAR E TYPESCRIPT </span>
         <a href="https://github.com/cuelhosandra/ImersaoAlura" target="_blank"><button>Link GitHub</button></a>
     </section>
+    </div>  
 </main>
 
+<div class="linha-divisoria"></div>
+
+  <main id="secao2">        
+    <h2 class="sobreMim">Sobre mim</h2>          
+</main>
+
+<div class="section-2 wf-section">
+    <div class="wrapper about">
+        <div class="column about">
+            <div class="project-info head">
+                <h2>Sandra Coelho</h2>
+                <p>INFORMAÇÕES SOBRE MIM</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+<!--CONTATOS-->
+<main id="secao3">
+    <h2 class="contato">Contato</h2>
+    </div>        
+</main>
+
+<div class="linha-divisoria"></div>
+
+<p class="textoSocial">Me siga nas redes sociais ou me chame! Vamos conversar.</p>
+<div class="contatos">
+    <!-- <h2>Escolha a rede social:</h2>     -->
+    <section class="container-contatos">
+    <div class="linksContatos">
+    <a href="https://www.linkedin.com/in/sandra-coelho-38a08317a/" target="bla
+    " class="linkedin"><button class="btn">Linkedin</button></a>
+    <a href="https://github.com/cuelhosandra" target="blank" class="github"><button class="btn">GitHub</button></a>
+    <a href="https://www.instagram.com/cuelhosandra/" target="blank" class="instagram"><button class="btn">Instagram</button></a>
+    </div>
+</div>
+    </section>
   
     <!--FOOTER-->
-<footer class="page-footer">
-  <div class="container">
-  
-  </div>
-  <div class="footer-copyright">
+<footer class="page-footer"> 
   <div class="container">
   © 2022 Todos os Direitos Reservados
-  <a class="right" href="#!">Feito por Sandra Coelho</a>
-  </div>
-  </div>
-  </footer>
+  <a class="right" href="https://www.linkedin.com/in/sandra-coelho-38a08317a/" target="bl
+  ">Feito por Sandra Coelho</a> 
+  </div>  
+</footer>
         
              
     <scipt src="js/bootstrap.bundle.min.js"></script>
