@@ -256,7 +256,7 @@ main.cards section.card.about {
     background-image: url(../img/avatar.png);
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 60%;
+    background-size: 60% 90%;      
     opacity: 70%;
 }
 .column.about{
