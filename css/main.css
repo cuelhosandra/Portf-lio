@@ -1,36 +1,98 @@
 body{
-background: linear-gradient(90deg, rgb(207, 130, 189) 0%, rgb(231, 139, 204) 35%, rgb(241, 235, 245) 100%);
+background: linear-gradient(90deg, #ffdab9 0%, #f1d5b8 35%);
 font-family: 'Courier New', Courier, monospace;
 }
 
-/*RESPONSIVIDADE NAVBAR*/
-@media screen and (min-width:990px) {
-    .navbar-brand{
-        float: left;
-        margin-right: 750px;
-        padding-left: 10px; 
-    }
-    .navbar-nav{
-        float: right;
-    }
-    .nav-link{
-        transition:all 0.5s;
-    }
-    .nav-link:hover, .nav-link.active:hover{
-        background-color: rgb(255, 153, 250);
-        color: #000000;
-        transition:all 0.5s;
-        transform: scale(1.1);
-    }
- 
-    .configNavbar{
-        height: 100px;
-    }
-    li.nav-item a{
-        padding:35px 0;  
-    }
 
-}
+/*PROPRIEDADES DA NAVBAR*/
+a {
+    text-decoration: none;
+   }
+li {
+    list-style: none;
+   }
+   .navbar {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    flex: 1;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-left: 10px;
+    
+  }
+   .nav-links a {
+    color: black;
+
+   }
+   
+   .menu li:hover {
+    background-color: #ffcb9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    padding: 19px;
+   }
+   .menu li {
+    margin-left: 10px;
+   }
+ 
+  
+
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+    /*RESPONSIVIDADE NAVBAR*/
+   @media (max-width: 768px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color:#ffcb9e;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+   }
+   .menu li:hover {
+    display: inline-block;
+    background-color:#ffdab9;
+    transition: 0.3s ease;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+   }
+ 
+   }
+
 /*INÍCIO */
 
 .hello, .world{
@@ -70,12 +132,23 @@ font-family: 'Courier New', Courier, monospace;
     color: rgb(0, 0, 0);
 }
 
+.iconsSocial{
+    padding-top: 25px;
+    padding-left: 58px;
+    font-size: 25px;
+}
+
+.iconsSocial i{
+    color: black;
+}
+
+
 /*LINK TOPO*/
 
 #link-topo{
     text-decoration: none;
     color: white;
-    background-color: rgb(163, 91, 103);
+    background-color: #d8af97;
     padding: 20px;
     border-radius: 10px;
     position: fixed;
@@ -84,7 +157,7 @@ font-family: 'Courier New', Courier, monospace;
 }
 
 #link-topo:hover{
-    background-color: rgb(163, 64, 81);
+    background-color: #ffda89;
 }
 
 
@@ -95,6 +168,7 @@ main.cards {
     flex-direction:column-reverse;
     padding: 260px;
     padding-top: 100px;
+    padding-left: 370px;
 
 }
 
@@ -107,6 +181,7 @@ main.cards section.card {
     padding: 5rem 1.5rem;
     border-radius: 8px;
     max-height: 300px;
+    width: 570px;
     overflow: hidden;
 }
 
@@ -150,23 +225,23 @@ main.cards section.card button {
 }
 
 main.cards section.card.contact button {
-    background: linear-gradient(to right, #d1c8cf, #8b8b8b);
+    background: linear-gradient(to right, #795915, #d8af97);
 }
 main.cards section.card.shop button {
-    background: linear-gradient(to right, #8b8b8b, #d1c8cf);
+    background: linear-gradient(to right, #d8af97, #795915);
 }
 main.cards section.card.about button {
-    background: linear-gradient(to right, #d1c8cf, #8b8b8b);
+    background: linear-gradient(to right, #795915, #d8af97);
 }
 
 main.cards section.card.contact {
-    box-shadow: 20px 20px 50px -30px #1a191b;
+    box-shadow: 20px 20px 50px -50px #1a191b;
 }
 main.cards section.card.shop {
-    box-shadow: 20px 20px 50px -30px #000000;
+    box-shadow: 20px 20px 50px -50px #000000;
 }
 main.cards section.card.about {
-    box-shadow: 20px 20px 50px -30px #080707;
+    box-shadow: 20px 20px 50px -50px #080707;
 }
 
 .linha-divisoria {
@@ -243,6 +318,15 @@ main.cards section.card.about {
     flex-direction: column;
 }
 
+button.btn {
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+.linguagens{
+    padding-left: 100px;
+}
 
 /*CONTATOS*/
 
@@ -290,7 +374,7 @@ main.cards section.card.about {
 }
 
 .right:hover{   
-    color: #ffffff;
+    color: #967735;
 }
 @media screen and (max-width: 720px){
 .page-footer {
@@ -308,7 +392,10 @@ main.cards section.card.about {
 
 }
 
-
+.section-2 {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 /*RESPONSIVIDADE*/
 @media screen and (max-width: 720px) {
 
@@ -321,27 +408,34 @@ main.cards section.card.about {
         justify-content: left;
         padding-left: 50px;
     }
-    .bem-vindo, .fiqueAVontade{     
+    .bem-vindo{     
         font-size: 12px;
+        padding-top: 15px;
+    }
+
+    .iconsSocial{
+        padding-top: 0%;
+        padding-left: 25px;
     }
 
     .tchau{
-        height: 29px;
+        height: 33px;
+        padding-top: 15px;
     }
     
     .card.contact, .card.shop, .card.about{
-        width: 300px;
-        height: 300px;
+     height:300px;
     }
 
     main.cards {
         flex-direction: column;   
-        padding-left: 40px;     
+        padding-left: 40px; 
     }
 
     main.cards section.card {
         margin-left: 0;
         margin-bottom: 32px;
+        width: 305px;
     }
 
     main.cards section.card:last-child {
@@ -363,6 +457,16 @@ main.cards section.card.about {
         opacity: 70%;
     }
 
+    
+    .section-2 {
+        flex-direction: column;
+      }
+      .about .project-info {
+        text-align: center;
+      }
+    .about .project-info h2 {
+        display: none;}
+
     .container-contatos {
         flex-direction: column; 
         text-align: center; 
@@ -377,4 +481,5 @@ main.cards section.card.about {
         padding: 10px;
         flex: 50%;
       }    
+
 }

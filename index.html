@@ -12,35 +12,24 @@
 </head>
 <body>
 
-    <!--NAV BAR-->
-
-    <nav class="navbar navbar-expand-lg configNavbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="img/assinatura.png" width="190px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">     
-            <i class="icofont-navigation-menu"></i>
-            </button>
-        
-        <div class="collapse navbar-collapse" id="navbarNav">           
-            <ul class="navbar-nav">     
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#secao0">Início</a>
-                </li>       
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#secao1">Projetos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#secao2">Sobre mim</a>
-                </li>           
-                <li class="nav-item">
-                    <a class="nav-link active" href="#secao3">Contato</a>
-                </li>           
-                </ul>
-        </div> 
+<nav class="navbar">
+        <!-- NAVEGAÇÃO MENU -->
+    <ul class="nav-links">
+        <!-- CHECKBOX  -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <!-- NAVEGAÇÃO MENUS -->
+        <div class="menu">
+        <ul>     
+        <li><a href="#secao0">Início</a></li>       
+        <li><a href="#secao1">Projetos</a></li>
+        <li><a href="#secao2">Sobre mim</a></li>           
+        <li><a href="#secao3">Contato</a></li>           
+        </ul>
     </div>
-    </nav>
-
+     </ul>
+</nav>
+   
     <!--BOTÃO VOLTAR AO TOPO-->
     <abbr title="VOLTE AO TOPO"><a id="link-topo" href="#" alt="Volte ao topo!">△</a></abbr>
 
@@ -49,12 +38,16 @@
     <H2 class="world">MUNDO!</H2>
     <div class="lado">
     <img class="tchau" src="img/tchau.png" width="30px">
-    <h4 class="bem-vindo">Vem conhecer um pouco mais sobre mim!</h4>  
-    </div>   
+    <h4 class="bem-vindo">Vem conhecer um pouco mais sobre mim!</h4>    
+    </div>  
+    
+    <div class="iconsSocial">
+        <a href="https://www.linkedin.com/in/sandra-coelho-38a08317a/" target="_blank"><i class="icofont-linkedin"></i></a> 
+        <a href="https://api.whatsapp.com/send?phone=5547991104702&text=Oi!%20Acabei%20de%20ver%20seu%20portf%C3%B3lio.%20Vamos%20conversar?%20:)" target="_blank"><i class="icofont-whatsapp"></i></a>
+        <a href="https://github.com/cuelhosandra" target="_blank"><i class="icofont-github"></i></a>
+    </div>
 </main> 
-
 <br><br>
-
 <div class="linha-divisoria"></div>
 
 <!--CARDS COM ALGUNS PROJETOS-->
@@ -93,25 +86,39 @@
   <main id="secao2">        
     <h2 class="sobreMim">Sobre mim</h2>          
 </main>
-
 <div class="section-2 wf-section">
     <div class="wrapper about">
         <div class="column about">
             <div class="project-info head">
                 <h2>Sandra Coelho</h2>
-                <p>INFORMAÇÕES SOBRE MIM</p>
+                <br>
+                <div style="display:flex;">
+                    <p style="flex:1">Com mais de 3 anos de experiência na área comercial, tinha em paralelo a paixão por tecnologia e programação. <br><br>
+                        Em 2022 decidi mudar de área e a +DEVS2BLU me deu essa chance. <br><br>
+                       Tenho como objetivo continuar me desenvolvendo e crescendo na área, sempre buscando novos desafios e oportunidades de aprendizado. </p>
+                    <div class="linguagens" style="flex:1;">
+                        <h3>Conhecimentos:</h3>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">BACKEND</button>
+                        <div id="demo1" class="collapse">Java e SpringBott</div>
+                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">FRONTEND</button>
+                        <div id="demo2" class="collapse">HTML, CSS e Javascript</div>    
+                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo6">BANCO DE DADOS</button>
+                        <div id="demo6" class="collapse">MySQL e PostreSQL</div>
+                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo3">FERRAMENTAS</button>
+                        <div id="demo3" class="collapse">Desenvolvimento: Git, GitHub e Bootstrap <br> Teste API: Postman e Insomnia <br> Design: WebFlow, Figma e Wix</div>    
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-  </div>
+</div>
 
 <!--CONTATOS-->
 <main id="secao3">
     <h2 class="contato">Contato</h2>
     </div>        
 </main>
-
-<div class="linha-divisoria"></div>
 
 <p class="textoSocial">Me siga nas redes sociais ou me chame! Vamos conversar.</p>
 <div class="contatos">
@@ -121,7 +128,7 @@
     <a href="https://www.linkedin.com/in/sandra-coelho-38a08317a/" target="bla
     " class="linkedin"><button class="btn">Linkedin</button></a>
     <a href="https://github.com/cuelhosandra" target="blank" class="github"><button class="btn">GitHub</button></a>
-    <a href="https://www.instagram.com/cuelhosandra/" target="blank" class="instagram"><button class="btn">Instagram</button></a>
+    <a href="https://api.whatsapp.com/send?phone=5547991104702&text=Oi!%20Acabei%20de%20ver%20seu%20portf%C3%B3lio.%20Vamos%20conversar?%20:)" target="blank" class="whatsapp"><button class="btn">Whatsapp</button></a>
     </div>
 </div>
     </section>
@@ -135,7 +142,9 @@
   </div>  
 </footer>
         
-             
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <scipt src="js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
 
