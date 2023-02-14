@@ -173,6 +173,7 @@ main.cards {
 
 main.cards .espaco {
     display: flex;
+    
 }
 
 main.cards section.card {
@@ -438,44 +439,27 @@ button.btn {
         padding-top: 15px;
     }
 
+    main.cards .espaco {
+    display: flex;
+    flex-direction: column;    
+    }
+
     main.cards {
-        display: block;
-        padding-left: 0;
+        padding-left: 200px;
       }
+    
       main.cards section.card {
-        width: 100%;
+        width: 90%;
         margin-bottom: 32px;
       }
       main.cards section.card:last-child {
         margin-bottom: 0;
       }
-    
-    /* main.cards {
-        padding-left: 0;
-      
-      }
-      main.cards section.card {
-        width: 100%;
-      }
-    main.cards {
-        flex-direction: column;   
-        padding-left: 40px; 
-    }
 
-    main.cards section.card {
-        margin-left: 0;
-        margin-bottom: 32px;
-        width: 305px;
-    }
-
-    main.cards section.card:last-child {
-        margin-bottom: 0;
-    }
-
-    main.cards section.card button {
+      main.cards section.card button {
         font-size: 70%;
         width: 250px;
-    } */
+      }
 
     .aquiEstao, .sobreMim, .contato{
         padding-right: 140px;
