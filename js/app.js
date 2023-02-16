@@ -12,3 +12,10 @@ navLinks.forEach(link => {
     });
   });
 });
+
+//FUNÇÃO QUE VERIFICA QND O USUÁRIO CLICA NO HAMBURGUER PARA ESCONDÊ-LO NOVAMENTE
+function hideMenu() {
+  if (window.innerWidth <= 768) {
+    document.getElementById('checkbox_toggle').checked = false;
+  }
+}

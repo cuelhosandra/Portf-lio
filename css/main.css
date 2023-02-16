@@ -70,12 +70,14 @@ input[type=checkbox]{
    .menu { 
     display:none;
     position: absolute;
-    background-color:#ffcb9e;
+    background-color:#fff2e7;
     right: 0;
     left: 0;
     text-align: center;
     padding: 16px 0;
+    font-size: 15px;
    }
+
    .menu li:hover {
     display: inline-block;
     background-color:#ffdab9;
@@ -415,6 +417,24 @@ button.btn {
     body{
         background: linear-gradient(#fff0ef, #f1eae2);
     }
+
+
+    #link-topo{
+        text-decoration: none;
+        color: white;
+        background-color: #d8af97;
+        padding: 20px;
+        border-radius: 10px;
+        position: fixed;
+        right: 10px;
+        bottom: 30px;   
+    }
+    .top{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+    }
     .hello, .world {
         font-size: 50px;   
     }
@@ -439,19 +459,19 @@ button.btn {
         padding-top: 15px;
     }
 
-    main.cards .espaco {
-    display: flex;
-    flex-direction: column;    
-    }
-
     main.cards {
-        padding-left: 200px;
-      }
-    
-      main.cards section.card {
-        width: 90%;
-        margin-bottom: 32px;
-      }
+        max-width: 100%;
+        padding: 16px;
+    }
+    main.cards .espaco {
+        display: flex;
+        flex-direction: column;
+    }
+    main.cards section.card {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+   
       main.cards section.card:last-child {
         margin-bottom: 0;
       }
