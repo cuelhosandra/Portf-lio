@@ -262,10 +262,10 @@ main.cards section.card.about {
     display: none;
   }
 .wrapper.about{
-    background-image: url(../img/avatar.png);
+    background-image: url(../img/avatar\ \(2\).png);
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 50% 80%;      
+    background-size: 50% 70%;      
     opacity: 70%;
     padding: 5em 1px 10px 1px;
 
