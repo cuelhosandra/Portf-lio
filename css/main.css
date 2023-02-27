@@ -344,7 +344,7 @@ button.btn {
 
 .contatos{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 10%;
 }
 .botao {
@@ -372,6 +372,8 @@ button.btn {
 }
 
 .textoSocial{
+    display: flex;
+    justify-content: center;
     padding-top: 5%;
     padding-left: 40px;
     font-size: 30px;
