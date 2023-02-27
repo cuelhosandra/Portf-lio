@@ -86,9 +86,7 @@ li {
    }
    .menu li {
     margin-left: 10px;
-   }
- 
-  
+   }  
 
 input[type=checkbox]{
     display: none;
@@ -177,13 +175,9 @@ input[type=checkbox]{
     padding-left: 40px;
     font-weight: bold;
     color: rgb(0, 0, 0);
-    font-family: lato;
-   
+    font-family: lato;   
 
-    }
-
-
-
+}
 .iconsSocial{
     padding-top: 25px;
     padding-left: 58px;
@@ -211,7 +205,6 @@ input[type=checkbox]{
 #link-topo:hover{
     background-color: #ffda89;
 }
-
 
 /*CARDS - PROJETOS*/
 
@@ -322,7 +315,6 @@ main.cards section.card.about {
     
 }
 
-
 /*SOBRE MIM*/
 
 .blocoSobre{
@@ -332,46 +324,6 @@ main.cards section.card.about {
     padding-bottom: 50px;
     font-size: 23px;
 }
-
-.textoSobre-mobile {
-    display: none;
-
-  }
-.wrapper.about{
-    /* background-image: url(../img/avatar\ \(2\).png); */
-    /* background-repeat: no-repeat;
-    background-position: right;
-    background-size: 50% 70%;      
-    opacity: 70%; */
-    /* padding: 5em 1px 10px 1px; */
-
-}
-.column.about{
-    /* display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox; */
-    /* display: flex;
-    overflow: visible; */
-    /* width: 50%;
-    height: auto;
-    min-height: 100vh;
-    padding-left: 15vw;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto; */
-    /* background-color: rgba(0, 0, 0, 0.75);
-    color: white; */
-}
-/* 
-.column.about:hover{
-    background-color: rgba(0, 0, 0, 0.75);
-    opacity: 1;
-} */
 
 .wrapper-info.about{
     width: 100%;
@@ -408,9 +360,8 @@ main.cards section.card.about {
 
 button.btn {
     display: block;
-    margin-bottom: 10px;
-    
-    
+    margin-bottom: 10px; 
+
 }
 
 .linguagens{
@@ -442,15 +393,6 @@ button.btn {
 .botao:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 } 
-
-
-
-/* limitar altura do card*/
-.card-img{
-    max-height: 250px;
-    overflow: hidden;
-}
-
 .textoSocial{
     display: flex;
     justify-content: center;
@@ -462,15 +404,33 @@ button.btn {
 
 /*FOOTER*/
 .right{
-    text-decoration: none;
-    color: #000;
-    padding: 30px;
+    padding-left: 600px;
+     text-decoration: none;
+     color: black;
+    
+}
+.container{    
+    height: 70px;
+    display: flex;
+    justify-content: left; 
+    text-align: center;
 }
 
 .right:hover{   
     color: #967735;
 }
+  
 @media screen and (max-width: 720px){
+
+.right{
+    text-decoration: none;
+        color: #000;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+        text-align: center;
+    }
 .page-footer {
     font-size: 15px;
     bottom: 12px;
@@ -480,8 +440,10 @@ button.btn {
     }    
 
 .container{
-    /* width: 300px; */
-    height: 300px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
 }
 
 }
@@ -565,44 +527,14 @@ button.btn {
         padding-top: 40px;
     }
 
-  
-    /* .wrapper.about{
-        background-image: url(../img/avatar.png);
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: 100%;      
-        opacity: 70%;
-        padding: 5em 1px 10px 1px;
-    
-    }
-    .about {
-        width: 100%;
-      } */
-
-      .wrapper .column.about .project-info.head p {
-        display: none;
-      }
-
-      .wrapper .column.about .project-info.head h6 {
-        font-size:12px;
-        align-items: center;
-      }
-
-      .wrapper .column.about .project-info.head .textoSobre-mobile {
-        display: block;
+    .collapse{
         text-align: center;
-        font-size: 12px;
-        padding-left: 90px;
     }
 
-
-    .wrapper.about .column.about .project-info > div {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-      }
       
       .linguagens {
+        display: flex;
+        flex-direction: column;
         flex: 1;
         padding-left: 10px;
       }

@@ -17,15 +17,15 @@
             background-attachment:fixed;
 }       
 
-@media (max-width: 768px) {
+    @media (max-width: 768px) {
     body{
         background-image: url("img//background.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment:fixed;
-    }}
-   
-</style>
+    }}   
+    </style>
+
     <title>Sandra Coelho</title>
 
 </head>
@@ -38,17 +38,16 @@
         <input type="checkbox" id="checkbox_toggle" />
         <label for="checkbox_toggle" class="hamburger">&#9776;</label>
         <!-- NAVEGAÇÃO MENUS -->
-        <div class="menu">
+    <div class="menu">
         <ul>     
-        <li><a href="#secao0" onclick="hideMenu()">Início</a></li>       
-        <li><a href="#secao1" onclick="hideMenu()">Projetos</a></li>
-        <li><a href="#secao2" onclick="hideMenu()">Sobre mim</a></li>           
-        <li><a href="#secao3" onclick="hideMenu()">Contato</a></li>           
+            <li><a href="#secao0" onclick="hideMenu()">Início</a></li>       
+            <li><a href="#secao1" onclick="hideMenu()">Projetos</a></li>
+            <li><a href="#secao2" onclick="hideMenu()">Sobre mim</a></li>           
+            <li><a href="#secao3" onclick="hideMenu()">Contato</a></li>           
         </ul>
     </div>
-     </ul>
-</nav>
-   
+    </ul>
+</nav>   
     <!--BOTÃO VOLTAR AO TOPO-->
     <div class="top">
     <abbr title="VOLTE AO TOPO"><a id="link-topo" href="#" alt="Volte ao topo!">△</a></abbr>
@@ -73,9 +72,7 @@
         <a href="https://www.linkedin.com/in/sandra-coelho-38a08317a/" target="_blank"><i class="icofont-linkedin"></i></a> 
         <a href="https://api.whatsapp.com/send?phone=5547991104702&text=Oi!%20Acabei%20de%20ver%20seu%20portf%C3%B3lio.%20Vamos%20conversar?%20:)" target="_blank"><i class="icofont-whatsapp"></i></a>
         <a href="https://github.com/cuelhosandra" target="_blank"><i class="icofont-github"></i></a>
-    </div> 
-    
-
+    </div>  
 </main> 
 
 <div class="linha-divisoria"></div>
@@ -88,7 +85,7 @@
     <div class="espaco">
     <section class="card contact">
         <div class="icon">
-            <img src="img/fullstack.png" height="80px">
+            <img src="img/lampada.png" height="80px">
         </div>
         <h3>PROJETO FULLSTACK</h3>
         <span>Java, Spring Boot, TypeScript, CLI, HTTP, Javascript, Angular, HTML&CSS</span>
@@ -96,7 +93,7 @@
     </section>
     <section class="card shop">
         <div class="icon">
-            <img src="img/frontend.png" height="80px">
+            <img src="img/livro.png" height="80px">
         </div>
         <h3>PROJETO FRONTEND</h3>
         <span>HTML&CSS, Javascript, Bootstrap</span>
@@ -104,7 +101,7 @@
     </section>
     <section class="card about">
         <div class="icon">
-            <img src="img/backend.png" height="80px">
+            <img src="img/script-java.png" height="80px">
         </div>
         <h3>PROJETO SPRING BOOT</h3>
         <span>Java, Spring Boot</span>
@@ -116,7 +113,7 @@
     <div class="espaco">
     <section class="card contact">
         <div class="icon">
-            <img src="img/pc.png" height="80px">
+            <img src="img/coracao.png" height="80px">
         </div>
         <h3>PROJETO FULLSTACK</h3>
         <span>Java, Spring Boot, TypeScript, CLI, HTTP, Javascript, Angular, HTML&CSS</span>
@@ -124,7 +121,7 @@
     </section>
     <section class="card shop">
         <div class="icon">
-            <img src="img/portfolio.png" height="80px">
+            <img src="img/area-de-trabalho-do-computador.png" height="80px">
         </div>
         <h3>PROJETO PORTFÓLIO</h3>
         <span>HTML&CSS, Javascript, Bootstrap</span>
@@ -157,22 +154,24 @@
                     <span style="flex:1" class="textoSobre">Com mais de 3 anos de experiência na área comercial, tinha em paralelo a paixão por tecnologia e programação.<br>            
                     Em 2022 decidi mudar de área e a +DEVS2BLU me deu essa chance.<br>
                   No decorrer do programa me identifiquei com o FrontEnd. No entanto, estou apta à iniciar no mercado DEV com o BackEnd também.<br>
-                    Tenho como objetivo continuar me desenvolvendo e crescendo na área, sempre buscando novos desafios e oportunidades de aprendizado.</span>
-                    <span class="textoSobre-mobile">Após me identificar com a área DEV, decidi sair do setor comercial e por meio do programa +DEVS2BLU, tive a oportunidade de criar conhecimentos incríveis. Meu objetivo é buscar novos desafios e oportunidades de aprendizado.</span>
+                    Tenho como objetivo continuar me desenvolvendo e crescendo na área, sempre buscando novos desafios e oportunidades de aprendizado.</span>                 
                   </div>  
             </div>                 
                     <h6>Clique para expandir meus conhecimentos: <br><br></h6>  
+              
                     <div class="linguagens" style="flex:1;">
-                                          
-                        <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#demo1">BACKEND</button>
+                                
+                        <button type="button" class="btn btn-light btn-block" data-toggle="collapse" data-target="#demo1">BACKEND</button>
+                       
                         <div id="demo1" class="collapse">Java e SpringBoot</div>
-                        <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#demo2">FRONTEND</button>
+                        
+                        <button type="button" class="btn btn-light btn-block" data-toggle="collapse" data-target="#demo2">FRONTEND</button>
                         <div id="demo2" class="collapse">HTML, CSS, Javascript e Angular</div>    
-                        <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#demo3">BANCO DE DADOS</button>
+                        <button type="button" class="btn btn-light btn-block" data-toggle="collapse" data-target="#demo3">BANCO DE DADOS</button>
                         <div id="demo3" class="collapse">Database e PostreSQL</div>
-                        <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#demo4">FERRAMENTAS</button>
+                        <button type="button" class="btn btn-light btn-block" data-toggle="collapse" data-target="#demo4">FERRAMENTAS</button>
                         <div id="demo4" class="collapse">Desenvolvimento: Git, GitHub e Bootstrap <br> Teste API: Postman e Insomnia <br> Design: WebFlow, Figma e Wix</div> 
-                        <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#demo5">IDIOMAS</button>
+                        <button type="button" class="btn btn-light btn-block" data-toggle="collapse" data-target="#demo5">IDIOMAS</button>
                         <div id="demo5" class="collapse">Inglês: Avançado</div>   
                
                 </div>
@@ -190,7 +189,6 @@
 
 <p class="textoSocial">Fale comigo nos canais abaixo. Vamos conversar!</p>
 <div class="contatos">
-    <!-- <h2>Escolha a rede social:</h2>     -->
     <section class="container-contatos">
     <div class="linksContatos">
     <a href="https://www.linkedin.com/in/sandra-coelho-38a08317a/" target="bla
