@@ -1,11 +1,41 @@
-/* body{
-    background-image: url("img/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:fixed;
+/*ANIMAÇÃO INICIAL*/
+@import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
 
-}    */
+h5 {
+ font-size:5em;
+ font:bold 7.5vw/1.6 'lato', lato;
+ user-select:none;
+}
+
+h5 p { display:inline-block; animation:float .5s ease-in-out infinite; }
+ @keyframes float {
+  0%,100%{ transform:none; }
+  33%{ transform:translateY(-1px) rotate(-2deg); }
+  66%{ transform:translateY(1px) rotate(2deg); }
+}
+body:hover p { animation:bounce .6s; }
+@keyframes bounce {
+  0%,100%{ transform:translate(0); }
+  25%{ transform:rotateX(20deg) translateY(2px) rotate(-3deg); }
+  50%{ transform:translateY(-20px) rotate(3deg) scale(1.1);  }
+}
+
+h1 span:nth-child(2){ animation-delay:.05s; }
+h1 span:nth-child(3){ animation-delay:.1s; }
+h1 span:nth-child(4){ animation-delay:.15s; }
+h1 span:nth-child(5){ animation-delay:.2s; }
+h1 span:nth-child(6){ animation-delay:.25s; }
+h1 span:nth-child(7){ animation-delay:.3s; }
+h1 span:nth-child(8){ animation-delay:.35s; }
+h1 span:nth-child(9){ animation-delay:.4s; }
+h1 span:nth-child(10){ animation-delay:.45s; }
+h1 span:nth-child(11){ animation-delay:.5s; }
+h1 span:nth-child(12){ animation-delay:.55s; }
+h1 span:nth-child(13){ animation-delay:.6s; }
+h1 span:nth-child(14){ animation-delay:.65s; }
+
 /*PROPRIEDADES DA NAVBAR*/
+
 a {
     text-decoration: none;
    }
@@ -24,6 +54,9 @@ li {
     justify-content: flex-end;
     height: 100%;
     flex: 1;
+    padding-right: 25px;
+    font-family: serif;
+    font-size: 19px;
   }
   
   .menu {
@@ -105,27 +138,30 @@ input[type=checkbox]{
 /*INÍCIO */
 
 .hello, .world{
-    font-size: 150px;
+    font-size: 100px;
+    
 }
 
 .hello{
-    padding: 3%;
+    padding: 2%;
+    padding-bottom: 0%;
 }
 .world{
-    padding-left: 25%;
-    font-weight: bold;
+    padding-top: 0%;
+    padding-left: 12%;
 }
 
 .bem-vindo, .fiqueAVontade{
     color: rgb(0, 0, 0);
     font-size: 20px;
     padding-left: 4%;
+    font-family: serif;
 }
 
 .lado{
     display: flex;
-    justify-content:left;
-    padding-right: 53%;
+    justify-content:right;
+    padding-right: 60%;
     
 }
 
@@ -135,11 +171,18 @@ input[type=checkbox]{
 
 
 .aquiEstao, .sobreMim, .contato{
+    display: flex;
+    justify-content: center;
     padding-top: 5%;
     padding-left: 40px;
     font-weight: bold;
     color: rgb(0, 0, 0);
-}
+    font-family: lato;
+   
+
+    }
+
+
 
 .iconsSocial{
     padding-top: 25px;
@@ -246,11 +289,21 @@ main.cards section.card button {
 main.cards section.card.contact button {
     background: linear-gradient(to right, #fcc2a1, #d8af97);
 }
+
+main.cards section.card.contact button:hover{
+    background: linear-gradient(to left, #ff78c2, #d8af97);
+}
 main.cards section.card.shop button {
     background: linear-gradient(to right, #d8af97, #fcc2a1);
 }
+main.cards section.card.shop button:hover {
+    background: linear-gradient(to left, #d8af97, #ff78c2);
+}
 main.cards section.card.about button {
     background: linear-gradient(to right, #fcc2a1, #d8af97);
+}
+main.cards section.card.about button:hover {
+    background: linear-gradient(to left, #ff78c2, #d8af97);    
 }
 
 main.cards section.card.contact {
@@ -269,27 +322,37 @@ main.cards section.card.about {
     
 }
 
+
 /*SOBRE MIM*/
+
+.blocoSobre{
+    font-family: sans;
+    color: black;
+    text-align:left;
+    padding-bottom: 50px;
+    font-size: 23px;
+}
 
 .textoSobre-mobile {
     display: none;
+
   }
 .wrapper.about{
-    background-image: url(../img/avatar\ \(2\).png);
-    background-repeat: no-repeat;
+    /* background-image: url(../img/avatar\ \(2\).png); */
+    /* background-repeat: no-repeat;
     background-position: right;
     background-size: 50% 70%;      
-    opacity: 70%;
-    padding: 5em 1px 10px 1px;
+    opacity: 70%; */
+    /* padding: 5em 1px 10px 1px; */
 
 }
 .column.about{
-    display: -webkit-box;
+    /* display: -webkit-box;
     display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: visible;
-    width: 50%;
+    display: -ms-flexbox; */
+    /* display: flex;
+    overflow: visible; */
+    /* width: 50%;
     height: auto;
     min-height: 100vh;
     padding-left: 15vw;
@@ -300,15 +363,15 @@ main.cards section.card.about {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    background-color: rgba(0, 0, 0, 0.75);
-    color: white;
+    flex: 0 0 auto; */
+    /* background-color: rgba(0, 0, 0, 0.75);
+    color: white; */
 }
-
+/* 
 .column.about:hover{
     background-color: rgba(0, 0, 0, 0.75);
     opacity: 1;
-}
+} */
 
 .wrapper-info.about{
     width: 100%;
@@ -322,6 +385,7 @@ main.cards section.card.about {
     width: auto;
     padding-right: 10vw;
     padding-left: 10vw;
+    color: black;
 }
 
 .column.about{
@@ -350,7 +414,10 @@ button.btn {
 }
 
 .linguagens{
+    color: black;
     padding-left: 100px;
+    display: flex;
+    justify-content: space-around;
 }
 
 /*CONTATOS*/
@@ -497,8 +564,9 @@ button.btn {
         padding-right: 140px;
         padding-top: 40px;
     }
+
   
-    .wrapper.about{
+    /* .wrapper.about{
         background-image: url(../img/avatar.png);
         background-repeat: no-repeat;
         background-position: right;
@@ -509,7 +577,7 @@ button.btn {
     }
     .about {
         width: 100%;
-      }
+      } */
 
       .wrapper .column.about .project-info.head p {
         display: none;

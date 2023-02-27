@@ -1,3 +1,5 @@
+
+
 //ROLAR ATÉ ÀS SEÇÕES CLICADAS NO MENU
 const navLinks = document.querySelectorAll("nav a");
 
