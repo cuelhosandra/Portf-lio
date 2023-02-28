@@ -166,7 +166,7 @@ input[type=checkbox]{
 .iconsSocial{
     padding-top: 25px;
     padding-left: 58px;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 
@@ -426,7 +426,7 @@ button.btn {
     color: #a3236e;
 }
   
-@media screen and (max-width: 973px){
+@media screen and (max-width: 1188px) {
 
     /*FOOTER*/
 .right{
@@ -465,7 +465,7 @@ button.btn {
     margin: 0 auto;
   }
 
-@media screen and (max-width: 973px) {
+@media screen and (max-width: 1188px) {
 
     ul {
         align-items: center;
