@@ -104,7 +104,7 @@ input[type=checkbox]{
     /*RESPONSIVIDADE NAVBAR*/
    @media (max-width: 768px) {
     body{
-        background-image: url("img//background.jpg");
+        background-image: url("img//background2.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment:fixed;
@@ -426,7 +426,7 @@ button.btn {
     color: #a3236e;
 }
   
-@media screen and (max-width: 720px){
+@media screen and (max-width: 973px){
 
     /*FOOTER*/
 .right{
@@ -465,7 +465,7 @@ button.btn {
     margin: 0 auto;
   }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 973px) {
 
     ul {
         align-items: center;
