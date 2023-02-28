@@ -453,6 +453,11 @@ button.btn {
     font-size: 13px;
 }
 
+.textoSocial{
+    font-size: 23px;
+    align-items: center;
+}
+
 }
 
 .section-2 {
@@ -535,7 +540,9 @@ button.btn {
 
     .aquiEstao, .sobreMim, .contato{
         padding-right: 140px;
-        padding-top: 40px;
+        padding-left: 140px;
+        padding-top: 40px;           
+          
     }
 
     .collapse{
