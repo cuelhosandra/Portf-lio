@@ -1,9 +1,13 @@
 /*ANIMAÇÃO INICIAL*/
 @import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
 
+h5 p {
+    font-size: 60px;
+}
+
 h5 {
  font-size:5em;
- font:bold 7.5vw/1.6 'lato', lato;
+ font:bold 7.5vw/1.6 'lato';
  user-select:none;
 }
 
@@ -135,18 +139,10 @@ input[type=checkbox]{
 
 /*INÍCIO */
 
-.hello, .world{
-    font-size: 100px;
-    
-}
-
 .hello{
-    padding: 2%;
-    padding-bottom: 0%;
-}
-.world{
-    padding-top: 0%;
-    padding-left: 12%;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
 }
 
 .bem-vindo, .fiqueAVontade{
@@ -167,6 +163,12 @@ input[type=checkbox]{
     float: right;
 }
 
+.iconsSocial{
+    padding-top: 25px;
+    padding-left: 58px;
+    font-size: 25px;
+}
+
 
 .aquiEstao, .sobreMim, .contato{
     display: flex;
@@ -178,11 +180,7 @@ input[type=checkbox]{
     font-family: lato;   
 
 }
-.iconsSocial{
-    padding-top: 25px;
-    padding-left: 58px;
-    font-size: 25px;
-}
+
 
 .iconsSocial i{
     color: black;
@@ -364,12 +362,20 @@ button.btn {
 
 }
 
-.linguagens{
-    color: black;
-    padding-left: 100px;
+.linguagens {
     display: flex;
     justify-content: space-around;
-}
+    
+  }
+  
+  .item {
+    margin-bottom: 10px;
+  }
+  
+  .collapse {
+    display: none;
+  }
+
 
 /*CONTATOS*/
 
@@ -417,11 +423,12 @@ button.btn {
 }
 
 .right:hover{   
-    color: #967735;
+    color: #a3236e;
 }
   
 @media screen and (max-width: 720px){
 
+    /*FOOTER*/
 .right{
     text-decoration: none;
         color: #000;
@@ -452,8 +459,12 @@ button.btn {
     max-width: 1000px;
     margin: 0 auto;
   }
-/*RESPONSIVIDADE*/
+
 @media screen and (max-width: 720px) {
+
+    ul {
+        align-items: center;
+    }
 
     body{
         background: linear-gradient(#fff0ef, #f1eae2);
@@ -475,19 +486,19 @@ button.btn {
         top: 0;
         left: 0;
         z-index: 9999;
-    }
-    .hello, .world {
-        font-size: 50px;   
-    }
+    }   
 
     .hello{
         display: flex;
-        justify-content: left;
-        padding-left: 50px;
+        justify-content: center;
+        padding-top: 80px;
+    }
+
+    .hello p{
+        font-size: 30px;
     }
     .bem-vindo{     
-        font-size: 12px;
-        padding-top: 15px;
+        font-size: 14px;
     }
 
     .iconsSocial{
@@ -537,6 +548,11 @@ button.btn {
         flex-direction: column;
         flex: 1;
         padding-left: 10px;
+        align-items: center;
+      }
+
+      .collapse{
+        align-items: center;
       }
       
       .textoSobre {

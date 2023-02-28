@@ -1,5 +1,4 @@
 
-
 //ROLAR ATÉ ÀS SEÇÕES CLICADAS NO MENU
 const navLinks = document.querySelectorAll("nav a");
 
@@ -21,3 +20,19 @@ function hideMenu() {
     document.getElementById('checkbox_toggle').checked = false;
   }
 }
+
+//BOTÕES EXPANDIR CONHECIMENTOS
+var botoes = document.querySelectorAll(".btn");
+
+botoes.forEach(function(botao) {
+  botao.addEventListener("click", function() {
+    var conteudo = this.nextElementSibling;
+
+    if (conteudo.style.display === "block") {
+      conteudo.style.display = "none";
+    } else {
+      conteudo.style.display = "block";
+      document.getElementById("conteudo-expandido").innerHTML = conteudo.innerHTML;
+    }
+  });
+});
