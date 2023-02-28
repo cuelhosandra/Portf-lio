@@ -382,7 +382,7 @@ button.btn {
 .contatos{
     display: flex;
     justify-content: center;
-    padding: 10%;
+    padding: 5%;
 }
 .botao {
     background-color: rgb(255, 251, 251); 
