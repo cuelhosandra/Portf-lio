@@ -1,8 +1,10 @@
 /*ANIMAÇÃO INICIAL*/
+
 @import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
 
 h5 p {
     font-size: 60px;
+    margin-bottom: -100px;
 }
 
 h5 {
@@ -266,7 +268,7 @@ main.cards section.card span {
 main.cards section.card button {
     padding: 0.5rem 1rem;
     text-transform: uppercase;
-    border-radius: 32px;
+    border-radius: 8px;
     border: 0;
     cursor: pointer;
     font-size: 90%;
@@ -315,12 +317,17 @@ main.cards section.card.about {
 
 /*SOBRE MIM*/
 
+.textoSobre{
+    text-align:center;
+}
+
 .blocoSobre{
     font-family: sans;
     color: black;
     text-align:left;
     padding-bottom: 50px;
     font-size: 23px;
+   
 }
 
 .wrapper-info.about{
@@ -328,7 +335,6 @@ main.cards section.card.about {
     padding-top: 5vh;
     padding-bottom: 5vh;
     border-bottom: 1px none #e4e4e4;
-
 }
 
 .column.about{
@@ -365,16 +371,33 @@ button.btn {
 .linguagens {
     display: flex;
     justify-content: space-around;
-    
   }
   
   .item {
     margin-bottom: 10px;
   }
   
+  .item.collapsing {
+    display: flex;
+    align-items: center;
+  }
+  
   .collapse {
     display: none;
+    text-align: center;
   }
+
+/* .linguagens {
+    display: flex;
+    justify-content: space-around; 
+  }
+  .item  {
+    margin-bottom: 10px;
+  }
+
+  .collapse {
+    display: none;
+  } */
 
 
 /*CONTATOS*/
@@ -385,8 +408,8 @@ button.btn {
     padding: 5%;
 }
 .botao {
-    background-color: rgb(255, 251, 251); 
-    border-radius: 8px;
+    background: linear-gradient(to right, #ff78c2, #d8af97);
+    border-radius: 6px;
     color: rgb(44, 27, 27);
     font-weight: bold;
     padding: 15px 32px;
@@ -397,7 +420,7 @@ button.btn {
 }
 
 .botao:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background: linear-gradient(to left, #ff78c2, #d8af97);
 } 
 .textoSocial{
     display: flex;
@@ -548,8 +571,6 @@ button.btn {
     .collapse{
         text-align: center;
     }
-
-      
       .linguagens {
         display: flex;
         flex-direction: column;
