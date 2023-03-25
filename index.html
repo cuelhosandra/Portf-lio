@@ -12,18 +12,20 @@
   
     <style>
         body{
-            background-image: url("img//background2.jpg");
-            background-repeat: no-repeat;
+            background-image: url("img//background11.jpg");
             background-size: cover;
-            background-attachment:fixed;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: 'roboto', sans-serif;
 }       
 
     @media (max-width: 1188px)  {
     body{
-        background-image: url("img//background2.jpg");
-            background-repeat: no-repeat;
+        background-image: url("img//background5.jpg");
             background-size: cover;
-            background-attachment:fixed;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: 'roboto', sans-serif;
     }}   
     </style>
 
@@ -33,19 +35,17 @@
 <body>
 
 <nav class="navbar">
-        <!-- NAVEGAÇÃO MENU -->
     <ul class="nav-links">
-        <!-- CHECKBOX  -->
         <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        <!-- NAVEGAÇÃO MENUS -->
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>      
     <div class="menu">
-        <ul>     
+    <ul>     
             <li><a href="#secao0" onclick="hideMenu()">Início</a></li>       
             <li><a href="#secao1" onclick="hideMenu()">Projetos</a></li>
-            <li><a href="#secao2" onclick="hideMenu()">Sobre mim</a></li>           
-            <li><a href="#secao3" onclick="hideMenu()">Contato</a></li>           
-        </ul>
+            <li><a href="#secao2" onclick="hideMenu()">Sobre mim</a></li>     
+            <li><a href="#secao3" onclick="hideMenu()">Habilidades</a></li>        
+            <li><a href="#secao4" onclick="hideMenu()">Contato</a></li>           
+    </ul>
     </div>
     </ul>
 </nav>   
@@ -59,19 +59,20 @@
     <h5>
         <div class="hello">
             <p>SANDRA COELHO</p>     
-        </div>
-        <br>   
+                       
+        </div>        
+        <div class="iconsSocial">
+            <h4></h4>
+        <a href="https://www.linkedin.com/in/sandra-coelho-38a08317a/" target="_blank"><img src="/img/linkedin.png"></img></a> 
+        <a href="https://api.whatsapp.com/send?phone=5547991104702&text=Oi!%20Acabei%20de%20ver%20seu%20portf%C3%B3lio.%20Vamos%20conversar?%20:)" target="_blank"><img src="/img/whatsapp.png"></img></a>
+        <a href="https://github.com/cuelhosandra" target="_blank"><img src="/img/github.png"></img></a>
+    </div>  
+        <br>           
         <div class="lado">          
         </div>            
         </h5>    
      </div>   
-     
-    <div class="iconsSocial">
-            <h4></h4>
-        <a href="https://www.linkedin.com/in/sandra-coelho-38a08317a/" target="_blank"><i class="icofont-linkedin"></i></a> 
-        <a href="https://api.whatsapp.com/send?phone=5547991104702&text=Oi!%20Acabei%20de%20ver%20seu%20portf%C3%B3lio.%20Vamos%20conversar?%20:)" target="_blank"><i class="icofont-whatsapp"></i></a>
-        <a href="https://github.com/cuelhosandra" target="_blank"><i class="icofont-github"></i></a>
-    </div>  
+  
 </main> 
 
 <div class="linha-divisoria"></div>
@@ -94,9 +95,9 @@
         <div class="icon">
             <img src="img/livro.png" height="80px">
         </div>
-        <h3>PROJETO FRONTEND</h3>
-        <span>HTML&CSS, Javascript, Bootstrap</span><br>
-        <a href="https://github.com/cuelhosandra/TrabalhoProd.Cultural" target="_blank"><button>Link GitHub</button></a>
+        <h3>PROJETO FULLSTACK</h3>
+        <span>Java, Spring Boot, Angular, TypeScript, RabbitMQ, HTML&CSS, Bootstrap</span>
+        <a href="https://github.com/more-devs-2-blu/best-solutions" target="_blank"><button>Link GitHub</button></a>
     </section>
     <section class="card about">
         <div class="icon">
@@ -128,11 +129,11 @@
     </section>
     <section class="card about">
         <div class="icon">
-            <img src="img/embreve.png" height="80px">
+            <img src="img/programming.png" height="80px">
         </div>
-        <h3>LANDING PAGE</h3>
-        <span>Em breve!</span><br>
-        <a href="https://github.com/cuelhosandra" target="_blank"><button>Link GitHub</button></a>
+        <h3>PROJETO FRONTEND</h3>
+        <span>HTML&CSS, JavaScript, Bootstrap</span>
+        <a href="https://github.com/cuelhosandra/TrabalhoProd.Cultural" target="_blank"><button>Link GitHub</button></a>
     </section>    
     </div>  
 </main>
@@ -146,44 +147,61 @@
     <div class="column about">
      <div class="project-info head">               
         <div class="blocoSobre">
-            <h2><b>Sandra Coelho</b></h2><br>
-            <div style="display:flex;">                    
+                <div style="display:flex;">                    
                <span style="flex:1" class="textoSobre">Com mais de 3 anos de experiência na área comercial, tinha em paralelo a paixão por tecnologia e programação.<br>            
                     Em 2022 decidi mudar de área e a +DEVS2BLU me deu essa chance.<br>
-                     No decorrer do programa me identifiquei com o FrontEnd. No entanto, estou apta à iniciar no mercado DEV com o BackEnd também.<br>
+                     No decorrer do programa me identifiquei com Java e Spring Framework. No entanto, estou apta à iniciar no mercado DEV com o Frontend também.<br>
                      Tenho como objetivo continuar me desenvolvendo e crescendo na área, sempre buscando novos desafios e oportunidades de aprendizado.</span>              
                   </div>  
+                  <br><br>
+                  <h4 style="color:white" align="center">Quer saber mais sobre mim? <br>Vem dar uma olhada no meu currículo completo com todas as informações! <br>
+                    <a class="curriculo" href="/img/SANDRA (1).pdf" download="Curriculo da Sandra">DOWNLOAD DO CURRÍCULO</a>   
+                           
             </div>                 
-       
-            <h6>Clique para expandir meus conhecimentos: <br><br></h6>  
+<div class="linha-divisoria"></div>
 
+<div>
+<!--HABILIDADES-->
+    <h2 class="sobreMim" id="secao3">HABILIDADES</h2>  
+           
+    <div class="blocoHabilidades">
+       
+        <div style="display:flex;">                    
+           <span style="flex:1" class="textoHabilidade">Com habilidades excelentes em comunicação, liderei equipes em diversos projetos durante o programa +DEVS2BLU. <br> Minha criatividade e proatividade me permitem identificar soluções inovadoras e eficientes para os desafios do cotidiano. Sou altamente responsável e comprometida com a excelência em todas as minhas tarefas.</span>              
+              </div>  
+              <br><br>
+              <h4 style="color:white" align="center">Clique para expandir meus conhecimentos:<br>
+                    
+        </div>         
             <div class="linguagens">
               <div class="item">
            
-                <button type="button" class="btn btn-light btn-block">BACKEND</button>                        
+                <button type="button" class="btn btn-block">BACKEND</button>                        
                 <div class="collapse">Java <br>SpringBoot</div>               
             </div>
               <div class="item">
-                <button type="button" class="btn btn-light btn-block">FRONTEND</button>
-                <div class="collapse">HTML&CSS<br>Javascript</div>    
+                <button type="button" class="btn btn-block">FRONTEND</button>
+                <div class="collapse">Angular<br>Javascript<br>HTML&CSS</div>    
               </div>
               <div class="item">
-                <button type="button" class="btn btn-light btn-block">BANCO DE DADOS</button>
-                <div class="collapse">Database<br>PostreSQL</div>
+                <button type="button" class="btn btn-block">BANCO DE DADOS</button>
+                <div class="collapse">Database<br>PostreSQL<br>MySQL</div>
               </div>
               <div class="item">
-                <button type="button" class="btn btn-light btn-block">FERRAMENTAS</button>
-                <div class="collapse">Git&Github<br>Bootstrap<br>Postman<br>Insomnia<br>Docker</div> 
+                <button type="button" class="btn btn-block">FERRAMENTAS</button>
+                <div class="collapse">Git&Github<br>Bootstrap<br>PrimeNG<br>Postman<br>Insomnia<br>Docker</div> 
               </div>
               <div class="item">
-                <button type="button" class="btn btn-light btn-block">INGLÊS</button>
+                <button type="button" class="btn btn-block">INGLÊS</button>
                 <div class="collapse">Intermediário</div> 
             </div>
             <div class="item">
-                <button type="button" class="btn btn-light btn-block">DESIGN</button>
+                <button type="button" class="btn btn-block">DESIGN</button>
                 <div class="collapse">WebFlow <br> Figma <br> Wix</div> 
-            </div>          
-            </div>       
+            </div>        
+            </div>      
+          
+        </div>
         </div>
     </div>
  </div>
@@ -192,7 +210,7 @@
 <div class="linha-divisoria"></div>
 
 <!--CONTATOS-->
-<main id="secao3">
+<main id="secao4">
     <h2 class="contato">CONTATO</h2>
     </div>        
 </main>
@@ -200,15 +218,15 @@
 <div class="contatos">
     <section class="container-contatos">
     <div class="linksContatos">
-    <a href="https://www.linkedin.com/in/sandra-coelho-38a08317a/" target="bla
-    " class="linkedin"><button class="botao">Linkedin</button></a>
-    <a href="https://github.com/cuelhosandra" target="blank" class="github"><button class="botao">GitHub</button></a>
-    <a href="https://api.whatsapp.com/send?phone=5547991104702&text=Oi!%20Acabei%20de%20ver%20seu%20portf%C3%B3lio.%20Vamos%20conversar?%20:)" target="blank" class="whatsapp"><button class="botao">Whatsapp</button></a>
+    <a href="https://www.linkedin.com/in/sandra-coelho-38a08317a/" target="_blank
+    " class="linkedin"><button class="botao">LINKEDIN</button></a>
+    <a href="https://github.com/cuelhosandra" target="blank" class="github"><button class="botao">GITHUB</button></a>
+    <a href="https://api.whatsapp.com/send?phone=5547991104702&text=Oi!%20Acabei%20de%20ver%20seu%20portf%C3%B3lio.%20Vamos%20conversar?%20:)" target="blank" class="whatsapp"><button class="botao">WHATSAPP</button></a>
     </div>
 </div>
     </section>
   
-    <!--FOOTER-->
+<!--FOOTER-->
 <footer class="page-footer"> 
   <div class="container">
   © 2023 Todos os Direitos Reservados

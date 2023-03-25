@@ -1,15 +1,14 @@
 /*ANIMAÇÃO INICIAL*/
 
-@import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
-
 h5 p {
     font-size: 60px;
     margin-bottom: -100px;
+    color: white;
 }
 
 h5 {
  font-size:5em;
- font:bold 7.5vw/1.6 'lato';
+ font:bold 7.5vw/1.6 'roboto', sans-serif;
  user-select:none;
 }
 
@@ -63,6 +62,7 @@ li {
     padding-right: 25px;
     font-family: serif;
     font-size: 19px;
+ 
   }
   
   .menu {
@@ -80,16 +80,16 @@ li {
     
   }
    .nav-links a {
-    color: black;
+    color: white;
+    text-decoration: overline;
+    font-family: 'roboto', sans-serif;
+   }
 
-   }
-   
-   .menu li:hover {
-    background-color: #ffd7c0;
-    border-radius: 5px;
+   .nav-links a:hover{
+    color: rgb(61, 136, 91);
     transition: 0.3s ease;
-    padding: 19px;
    }
+
    .menu li {
     margin-left: 10px;
    }  
@@ -103,42 +103,7 @@ input[type=checkbox]{
     font-size: 24px;
     user-select: none;
    }
-    /*RESPONSIVIDADE NAVBAR*/
-   @media (max-width: 768px) {
-    body{
-        background-image: url("img//background2.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment:fixed;
-    }
-   .menu { 
-    display:none;
-    position: absolute;
-    background-color:#fff2e7;    
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 16px 0;
-    font-size: 15px;
-   }
-
-   .menu li:hover {
-    display: inline-block;
-    background-color:#ffd7c0;
-    transition: 0.3s ease;
-   }
-   .menu li + li {
-    margin-top: 12px;
-   }
-   input[type=checkbox]:checked ~ .menu{
-    display: block;
-   }
-   .hamburger {
-    display: block;
-   }
- 
-   }
-
+   
 /*INÍCIO */
 
 .hello{
@@ -166,11 +131,13 @@ input[type=checkbox]{
 }
 
 .iconsSocial{
-    padding-top: 25px;
-    padding-left: 58px;
-    font-size: 35px;
+    padding-top:25px;    
+    text-align: center;
 }
-
+.iconsSocial img{
+    width: 40px;
+    height: 40px;
+}
 
 .aquiEstao, .sobreMim, .contato{
     display: flex;
@@ -178,23 +145,16 @@ input[type=checkbox]{
     padding-top: 5%;
     padding-left: 40px;
     font-weight: bold;
-    color: rgb(0, 0, 0);
-    font-family: lato;   
+    color: white;
+    font-family: 'roboto', sans-serif;   
 
 }
-
-
-.iconsSocial i{
-    color: black;
-}
-
-
 /*LINK TOPO*/
 
 #link-topo{
     text-decoration: none;
     color: white;
-    background-color: #d8af97;
+    background-color: green;
     padding: 20px;
     border-radius: 10px;
     position: fixed;
@@ -203,7 +163,7 @@ input[type=checkbox]{
 }
 
 #link-topo:hover{
-    background-color: #ffda89;
+    background-color: rgb(61, 136, 91);
 }
 
 /*CARDS - PROJETOS*/
@@ -211,12 +171,16 @@ input[type=checkbox]{
 main.cards.section2{
     padding-bottom: 50px;
 }
+
 main.cards {
+    font-family: 'roboto', sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
     padding: 260px;
     padding-top: 100px;
     padding-bottom: 0px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 main.cards .espaco {
@@ -230,11 +194,13 @@ main.cards section.card {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgb(253, 253, 253);
+    background-color: rgba(255, 255, 255, 0.4);
+    font-family: 'roboto', sans-serif;
     padding: 5rem 1.5rem;
     border-radius: 8px;
     max-height: 300px;
     width: 390px;
+    height: 900px;
     overflow: hidden;
     margin-right: 1rem;
 
@@ -256,13 +222,15 @@ main.cards section.card img {
 main.cards section.card h3 {
     font-size: 24px;
     margin: 16px 0;
+    font-weight: bold;
 }
 
 main.cards section.card span {
     font-weight: 380;
     max-width: 240px;
     font-size: 90%;
-    margin-bottom: 16px;
+    margin-top: 3%;
+    font-weight: 600;
 }
 
 main.cards section.card button {
@@ -271,7 +239,7 @@ main.cards section.card button {
     border-radius: 8px;
     border: 0;
     cursor: pointer;
-    font-size: 90%;
+    font-size: 97%;
     width: 300px;
     height: 45px;
     font-weight: bold;
@@ -279,34 +247,43 @@ main.cards section.card button {
     margin-bottom: 16px 0;
 }
 
+.card a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+main.cards section.card a {
+    display: flex;
+    justify-content: center;
+}
+
+main.cards section.card a button {
+    margin: 0 auto;
+}
+
 main.cards section.card.contact button {
-    background: linear-gradient(to right, #fcc2a1, #d8af97);
+    background-color: rgba(10,23,55,0);
+}
+
+main.cards section.card.shop button {
+ background-color: rgba(10,23,55,0);
+}
+
+main.cards section.card.about button{
+    background-color: rgba(10,23,55,0);   
 }
 
 main.cards section.card.contact button:hover{
-    background: linear-gradient(to left, #ff78c2, #d8af97);
-}
-main.cards section.card.shop button {
-    background: linear-gradient(to right, #d8af97, #fcc2a1);
-}
-main.cards section.card.shop button:hover {
-    background: linear-gradient(to left, #d8af97, #ff78c2);
-}
-main.cards section.card.about button {
-    background: linear-gradient(to right, #fcc2a1, #d8af97);
-}
-main.cards section.card.about button:hover {
-    background: linear-gradient(to left, #ff78c2, #d8af97);    
+    text-decoration: overline;
 }
 
-main.cards section.card.contact {
-    box-shadow: 20px 20px 50px -50px #1a191b;
+main.cards section.card.shop button:hover{
+    text-decoration: overline;
 }
-main.cards section.card.shop {
-    box-shadow: 20px 20px 50px -50px #000000;
-}
-main.cards section.card.about {
-    box-shadow: 20px 20px 50px -50px #080707;
+
+main.cards section.card.about button:hover{
+    text-decoration: overline;
 }
 
 .linha-divisoria {
@@ -317,19 +294,28 @@ main.cards section.card.about {
 
 /*SOBRE MIM*/
 
-.textoSobre{
+.textoSobre, .textoHabilidade{
     text-align:center;
 }
 
-.blocoSobre{
-    font-family: sans;
-    color: black;
-    text-align:left;
+.blocoSobre, .blocoHabilidades{
+    font-family: 'roboto', sans-serif;
+    color: white;
+    text-align:justify;
     padding-bottom: 50px;
     font-size: 23px;
    
 }
 
+.item button{
+    color: white;
+    font-size: 20px;
+}
+
+.item button:hover{
+    text-decoration: overline;
+    color: white!important;
+}
 .wrapper-info.about{
     width: 100%;
     padding-top: 5vh;
@@ -341,7 +327,6 @@ main.cards section.card.about {
     width: auto;
     padding-right: 10vw;
     padding-left: 10vw;
-    color: black;
 }
 
 .column.about{
@@ -385,19 +370,19 @@ button.btn {
   .collapse {
     display: none;
     text-align: center;
+    color: white;
   }
 
-/* .linguagens {
-    display: flex;
-    justify-content: space-around; 
-  }
-  .item  {
-    margin-bottom: 10px;
+  .curriculo{ 
+    color: greenyellow;
+    font-weight: bold;
+    font-size: 22px;
   }
 
-  .collapse {
-    display: none;
-  } */
+  .curriculo:hover{
+    color: rgb(61, 136, 91);
+    text-decoration: overline;
+  }
 
 
 /*CONTATOS*/
@@ -408,19 +393,19 @@ button.btn {
     padding: 5%;
 }
 .botao {
-    background: linear-gradient(to right, #ff78c2, #d8af97);
-    border-radius: 6px;
-    color: rgb(44, 27, 27);
+    background: rgb(0, 0, 0, 0);
+    border: none;
+    color: white;
     font-weight: bold;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 26px;
 }
 
 .botao:hover {
-    background: linear-gradient(to left, #ff78c2, #d8af97);
+    text-decoration: overline;
 } 
 .textoSocial{
     display: flex;
@@ -428,14 +413,14 @@ button.btn {
     padding-top: 5%;
     padding-left: 40px;
     font-size: 30px;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 /*FOOTER*/
 .right{
     padding-left: 600px;
      text-decoration: none;
-     color: black;
+     color: white;
     
 }
 .container{    
@@ -443,18 +428,41 @@ button.btn {
     display: flex;
     justify-content: left; 
     text-align: center;
+    color: white;
 }
 
 .right:hover{   
-    color: #a3236e;
+    color: green;
 }
   
 @media screen and (max-width: 1188px) {
 
+    /*NAVBAR*/
+
+    .menu { 
+        display:none;
+        position: absolute;  
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        font-size: 15px;
+       }
+    
+       .menu li + li {
+        margin-top: 12px;
+       }
+       input[type=checkbox]:checked ~ .menu{
+        display: block;
+       }
+       .hamburger {
+        display: block;
+        color: white;
+       }
+
     /*FOOTER*/
 .right{
-    text-decoration: none;
-        color: #000;
+        text-decoration: none;      
         padding: 0px;
         display: flex;
         justify-content: center;
@@ -481,34 +489,11 @@ button.btn {
     align-items: center;
 }
 
-}
-
-.section-2 {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
-@media screen and (max-width: 1188px) {
-
     ul {
         align-items: center;
     }
 
-    body{
-        background: linear-gradient(#fff0ef, #f1eae2);
-    }
-
-
-    #link-topo{
-        text-decoration: none;
-        color: white;
-        background-color: #d8af97;
-        padding: 20px;
-        border-radius: 10px;
-        position: fixed;
-        right: 10px;
-        bottom: 30px;   
-    }
+ 
     .top{
         position: fixed;
         top: 0;
@@ -530,14 +515,15 @@ button.btn {
     }
 
     .iconsSocial{
-        padding-top: 0%;
+        padding-top: 5%;
         padding-left: 25px;
     }
-
-    .tchau{
-        height: 33px;
-        padding-top: 15px;
+    
+    .iconsSocial img{
+        width: 25px;
+        height: 25px;
     }
+  
 
     main.cards {
         max-width: 100%;
@@ -570,16 +556,13 @@ button.btn {
 
     .collapse{
         text-align: center;
+        align-items: center;
     }
       .linguagens {
         display: flex;
         flex-direction: column;
         flex: 1;
         padding-left: 10px;
-        align-items: center;
-      }
-
-      .collapse{
         align-items: center;
       }
       
