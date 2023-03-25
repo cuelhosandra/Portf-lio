@@ -110,6 +110,7 @@ input[type=checkbox]{
     display: flex;
     justify-content: center;
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .bem-vindo, .fiqueAVontade{
@@ -506,7 +507,8 @@ button.btn {
     .hello{
         display: flex;
         justify-content: center;
-        padding-top: 80px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .hello p{
